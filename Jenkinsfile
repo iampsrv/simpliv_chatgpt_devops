@@ -43,10 +43,10 @@ pipeline {
         }
     }
     
-    post {
-        always {
-            // Cleanup workspace and Docker images to save space
-            sh 'docker system prune -af'
-        }
-    }
+    // post {
+    //     always {
+    //         // Cleanup workspace and Docker images to save space
+    //         sh 'docker system prune -af'
+    //     }
+    // }
 }
